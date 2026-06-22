@@ -1,0 +1,40 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+python-dotenv==1.0.0
+
+# LLM & RAG (bounded ranges — exact 0.1.0 pins were mutually incompatible)
+langchain>=0.1.16,<0.2
+langchain-openai>=0.1.0,<0.2
+langchain-community>=0.0.30,<0.1
+
+# Vector DB
+pinecone-client==3.0.2
+
+# OpenAI (range — version is driven by langchain-openai)
+openai>=1.24,<2
+
+# Video Processing
+youtube-transcript-api==0.6.1
+yt-dlp>=2026.3.17  # Instagram extractor breaks on old pins; keep recent
+
+# Data Processing
+numpy==1.24.3
+
+# HTTP & Async
+httpx==0.25.1
+aiohttp==3.9.1
+
+# Logging
+python-json-logger==2.0.7
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+httpx==0.25.1
+
+# Utilities
+python-multipart==0.0.6
+pytest-env==1.1.1
